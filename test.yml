@@ -1,0 +1,9 @@
+- name: Intro to Ansible Playbooks
+  hosts: my_servers
+
+  tasks:
+  - name: Copy file hosts with permissions
+    ansible.builtin.copy:
+      src: /etc/semaphore/config.json
+      dest: /tmp/
+      mode: '0644'
