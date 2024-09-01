@@ -1,5 +1,5 @@
 - name: Intro to Ansible Playbooks
-  hosts: my_servers
+  hosts: web_servers
 
   tasks:
   - name: Copy file hosts with permissions
