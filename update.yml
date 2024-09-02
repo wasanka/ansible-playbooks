@@ -5,3 +5,6 @@
       apt:
         update_cache: yes
         upgrade: yes
+    - name: Reboot machine and send a message
+      ansible.builtin.reboot:
+        msg: "Rebooting machine in 5 seconds"
