@@ -4,4 +4,4 @@
     - name: Update all packages
       apt:
         name: apt-update-upgrade
-        upgrade: all
+        upgrade: yes
