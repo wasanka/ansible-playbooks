@@ -1,3 +1,6 @@
-- name: Install the package "armbian-config"
-  apt:
-    name: armbian-config
+- hosts: k3s-nodes-rk
+  become: true
+  tasks:
+    - name: Install the package "armbian-config"
+      apt:
+        name: armbian-config
