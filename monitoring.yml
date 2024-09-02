@@ -1,0 +1,10 @@
+- hosts: all-linux-servers
+  become: true
+  tasks:
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: resources/process-info-mqtt-pub.sh
+        dest: /etc/semaphore/process-info-mqtt-pub.sh
+        owner: semaphore
+        group: semaphore
+        mode: '0644'
