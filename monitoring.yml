@@ -1,6 +1,13 @@
 - hosts: all-linux-servers
   become: true
   tasks:
+    - name: Install the package "sysstat"
+      apt:
+        name: sysstat
+        update_cache: yes
+        force_apt_get: yes
+        state: present
+        force: yes
     - name: Install the package "mosquitto-clients"
       apt:
         name: mosquitto-clients
