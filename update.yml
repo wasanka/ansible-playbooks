@@ -5,3 +5,4 @@
       apt:
         name: apt-update-upgrade
         upgrade: yes
+        update_cache: yes
