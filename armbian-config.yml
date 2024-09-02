@@ -6,4 +6,5 @@
         name: armbian-config
         update_cache: yes
         force_apt_get: yes
+        state: absent
         force: yes
