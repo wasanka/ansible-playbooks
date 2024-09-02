@@ -4,7 +4,7 @@
     - name: Copy file with owner and permissions
       ansible.builtin.copy:
         src: resources/process-info-mqtt-pub.sh
-        dest: /etc/semaphore/process-info-mqtt-pub.sh
+        dest: /etc/semaphore/
         owner: semaphore
         group: semaphore
         mode: '0644'
