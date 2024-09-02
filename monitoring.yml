@@ -8,3 +8,7 @@
         owner: semaphore
         group: semaphore
         mode: '0777'
+    - name: Ensure a data is published every minute"
+      ansible.builtin.cron:
+        name: "Send monitoring data"
+        job: "/etc/semaphore/process-info-mqtt-pub.sh > /dev/null"
