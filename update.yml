@@ -1,4 +1,4 @@
-- hosts: k3s-nodes-rk
+- hosts: k3s-all-nodes
   become: true
   tasks:
     - name: Update all packages
