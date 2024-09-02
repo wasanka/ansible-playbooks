@@ -4,3 +4,4 @@
     - name: Install the package "armbian-config"
       apt:
         name: armbian-config
+        update_cache: yes
