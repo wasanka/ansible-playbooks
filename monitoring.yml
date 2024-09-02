@@ -1,6 +1,13 @@
 - hosts: all-linux-servers
   become: true
   tasks:
+    - name: Install the package "mosquitto-clients"
+      apt:
+        name: mosquitto-clients
+        update_cache: yes
+        force_apt_get: yes
+        state: present
+        force: yes
     - name: Copy file with owner and permissions
       ansible.builtin.copy:
         src: resources/process-info-mqtt-pub.sh
