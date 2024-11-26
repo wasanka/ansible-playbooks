@@ -10,3 +10,4 @@
         mode: '0777'
     - name: Install K3s Agent and setup
       ansible.builtin.command: /tmp/agent.ksh
+      become: yes
